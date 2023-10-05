@@ -53,7 +53,7 @@ export function Earth() {
         <sphereGeometry args={[1, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
         <meshStandardMaterial map={colorMap} normalMap={normalMap} metalness={0.4} roughness={0.7} />
-        <OrbitControls enableZoom={false} enablePan={true} enableRotate={false} zoomSpeed={0.6} panSpeed={0.5} rotateSpeed={0.4} />
+        <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} zoomSpeed={0.6} panSpeed={0.5} rotateSpeed={0.4} />
       </mesh>
     </>
   );

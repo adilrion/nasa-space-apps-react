@@ -73,14 +73,16 @@ export function StickyNavbar() {
 
     return (
         <div className="">
-            <Navbar className="sticky top-0 z-10 h-max max-w-full text-[#b5bcc5] rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-[#0b1424] bg-opacity-75  backdrop-blur-lg  backdrop-saturate-180 border-none">
-                <div className="flex items-center justify-between">
+            <Navbar className="z-10 h-max  text-[#b5bcc5] rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-[#0b1424] bg-opacity-75  backdrop-blur-lg  backdrop-saturate-180 border-none">
+
+                
+                <div className="flex items-center justify-between max-w-screen-xl mx-auto">
                     <Typography
-                        as="a"
+                        as="h1"
                         href="#"
                         className="mr-4 cursor-pointer py-1.5 font-bold"
                     >
-                        Earthquake
+                        EarthShield
                     </Typography>
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block">{navList}</div>
