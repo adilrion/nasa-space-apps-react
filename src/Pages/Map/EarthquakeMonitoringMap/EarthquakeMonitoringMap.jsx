@@ -11,12 +11,12 @@ import {Legend} from '../Legend/Legend';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+
 export const EarthquakeMonitoringMap = () => {
 
 
   const [data, setData] = useState(null)
   
-  console.log(data)
   useEffect(() => {
     fetch('https://adilrion.github.io/developer-community-json/earth-data.json')
       .then((data) => data.json())

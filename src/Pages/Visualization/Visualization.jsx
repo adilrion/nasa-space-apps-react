@@ -1,4 +1,5 @@
 import {EarthquakeInformation} from "../EarthqakeInformation/EarthquakeInformation"
+import { TimingAndAlerts } from "../TimingAndAlerts/TimingAndAlerts"
 import {DataChart} from "./DataChart/DataChart"
 
 export const Visualization = () => {
@@ -10,7 +11,8 @@ export const Visualization = () => {
       
       <section>
         <EarthquakeInformation />
-        <DataChart/>
+        <DataChart />
+        <TimingAndAlerts/>
       </section>
     
     </>

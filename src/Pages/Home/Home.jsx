@@ -1,6 +1,7 @@
 
 import {Banner} from '../../components/Banner/Banner'
 import {EarthquakeInformation} from '../EarthqakeInformation/EarthquakeInformation'
+import { TimingAndAlerts } from '../TimingAndAlerts/TimingAndAlerts'
 import {DataChart} from '../Visualization/DataChart/DataChart'
 import './Home.css'
 
@@ -29,7 +30,9 @@ export const Home = () => {
           </div>
 
             <EarthquakeInformation />
-            <DataChart/>
+            <DataChart />
+            
+            <TimingAndAlerts/>
 
         </>
     )

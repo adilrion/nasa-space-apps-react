@@ -20,7 +20,7 @@ function App() {
           <QueryClientProvider client={queryClient}>
               <BrowserRouter>
                   <StickyNavbar />
-                  <div className="">
+                  <div className="min-h-screen">
                       <Routes>
                           <Route path="/" element={<Home />} />
                           <Route path="/home" element={<Home />} />
