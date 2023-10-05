@@ -2,6 +2,7 @@ import React from "react";
 import { MapContainer, Polygon, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 import { statesData } from "./data";
+import { CountriesSelect } from "./Country";
 
 
 
@@ -11,10 +12,11 @@ export const TimingAndAlerts = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto">
-      <header className="pt-10 py-6">
+      <header className="pt-10 py-6 flex justify-between items-center">
         <h1 className="underline decoration-wavy underline-offset-4">Timing And Alerts</h1>
+        <div className="z-50"><CountriesSelect></CountriesSelect></div>
       </header>
-      <section className="">
+      <section className="z-30">
         <MapContainer
           center={center}
           zoom={10}
