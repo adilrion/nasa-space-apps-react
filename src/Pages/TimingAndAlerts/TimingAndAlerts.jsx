@@ -3,6 +3,7 @@ import { MapContainer, Polygon, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 import { statesData } from "./data";
 import { CountriesSelect } from "./Country";
+import { BDmap } from "../Temp/BD/BDmap";
 
 
 
@@ -20,7 +21,8 @@ export const TimingAndAlerts = () => {
         <MapContainer
           center={center}
           zoom={10}
-          style={{ width: '100%', height: '500px'}}
+          style={{ width: '100%', height: '500px' }}
+          className="z-[inherit]"
         >
           <TileLayer
             url={`https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=AQ2fhr4c49NuzXXS86KJ`}
@@ -69,6 +71,10 @@ export const TimingAndAlerts = () => {
             );
           })}
         </MapContainer>
+      </section>
+
+      <section className="mt-5">
+        <BDmap></BDmap>
       </section>
     </div>
   );

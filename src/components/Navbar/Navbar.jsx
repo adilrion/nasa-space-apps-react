@@ -73,7 +73,7 @@ export function StickyNavbar() {
 
     return (
         <div className="">
-            <Navbar className="z-10 h-max  text-[#b5bcc5] rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-[#0b1424] bg-opacity-75  backdrop-blur-lg  backdrop-saturate-180 border-none">
+            <Navbar className="z-10 max-w-full h-max  text-[#b5bcc5] rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-[#0b1424] bg-opacity-75  backdrop-blur-lg  backdrop-saturate-180 border-none">
 
                 
                 <div className="flex items-center justify-between ">
